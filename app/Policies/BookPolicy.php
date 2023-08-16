@@ -13,7 +13,6 @@ class BookPolicy
         return $user->is_admin;
     }
 
-
     public function update(User $user, Book $book): bool
     {
         return $user->is_admin;
